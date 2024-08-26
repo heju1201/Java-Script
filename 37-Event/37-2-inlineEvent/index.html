@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Learn Inline Event</h1>
+    <button onclick="alert('You clicked the button')">Click me!</button>
+    <button onclick="alert('You clicked the button');alert('Notification 2')">
+      Click me!
+    </button>
+    <button ondblclick="alert('You double clicked the button')">
+      Click me!
+    </button>
+    <div
+      onmouseover="this.style.backgroundColor ='yellow'"
+      onmouseleave="this.parentElement.style.backgroundColor='red'"
+    >
+      move mouse over here
+    </div>
+    <input type="text" name="" id="" onkeypress="alert('You pressed a key')" />
+  </body>
+</html>
