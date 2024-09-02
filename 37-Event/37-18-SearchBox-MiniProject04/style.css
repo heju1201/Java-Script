@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffdee9;
+  background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+h1 {
+  text-align: center;
+  margin: 0 auto 50px;
+  background-color: aqua;
+  color: var(--progress-fill);
+  border-radius: 50px;
+  max-width: 80vw;
+  padding: 0 20px;
+}
+.search-roup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search {
+  position: relative;
+  height: 50px;
+}
+.search .input {
+  border-radius: 18px;
+  border: 0;
+  background-color: #fff;
+  font-size: 18px;
+  height: 50px;
+  width: 50px;
+  padding: 15px;
+}
+
+.btn {
+  border-radius: 18px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  transform: scale(0.98);
+  font-size: 24px;
+}
+.search.active .input {
+  width: 350px;
+  padding-left: 55px;
+}
+.btn:focus,
+input:focus {
+  outline: none;
+}
+.search.active .fa-magnifying-glass {
+  color: #ffdee9;
+}
